@@ -6,7 +6,7 @@
 /*   By: oaizab <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 11:16:45 by oaizab            #+#    #+#             */
-/*   Updated: 2021/12/14 14:48:46 by oaizab           ###   ########.fr       */
+/*   Updated: 2021/12/14 15:23:40 by oaizab           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	ft_printf(const char *s, ...)
 			size += ft_putchar(s[i]);
 		i++;
 	}
+	va_end(ap);
 	return (size);
 }
